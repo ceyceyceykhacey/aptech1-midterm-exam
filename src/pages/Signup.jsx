@@ -1,4 +1,4 @@
-
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Signup() {
@@ -11,7 +11,10 @@ function Signup() {
     password: "",
     confirmPassword: "",
   });
- 
+   const [errors, setErrors] = useState({});
+   const [success, setSuccess] = useState("");
+
+
   return (
     <div style={{ padding: "20px", maxWidth: "420px", margin: "0 auto" }}>
       <h1>Signup</h1>
