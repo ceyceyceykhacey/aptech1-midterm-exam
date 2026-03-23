@@ -7,9 +7,8 @@ function Navbar() {
       <div>
         <Link to="/home" style={styles.link}>Home</Link>
         <Link to="/profile" style={styles.link}>Profile</Link>
-        <Link to="/Signup" style={styles.link}>Signup</Link>
-        <Link to="/Success" style={styles.link}>Success</Link>
-        
+        <Link to="/signup" style={styles.link}>Signup</Link>
+        <Link to="/success" style={styles.link}>Success</Link>
       </div>
     </nav>
   );
