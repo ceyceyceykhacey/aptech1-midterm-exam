@@ -93,6 +93,12 @@ function Signup() {
     hasError
       ? setSuccess("")
       : (setSuccess(`Signup successful for ${form.firstName} ${form.surname}!`),
+        localStorage.setItem("userProfile", JSON.stringify({
+          firstName: form.firstName,
+          surname: form.surname,
+          username: form.username,
+          email: form.email
+        })),
         setForm({ firstName: "", surname: "", username: "", email: "", password: "", confirmPassword: "" }),
         setTouched({}),
         setTimeout(() => navigate("/success"), 700));
